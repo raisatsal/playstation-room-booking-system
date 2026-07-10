@@ -16,6 +16,6 @@ Proyek ini adalah sistem informasi berbasis web yang dirancang untuk mengelola o
 
 ## 👥 Kontribusi Saya dalam Proyek
 Dalam proyek kelompok ini, fokus utama saya meliputi:
-- **Pengembangan Dokumen Teknis & Laporan:** Menyusun rancangan kebutuhan sistem, dokumentasi alur program, dan pelaporan hasil final proyek.
+- **Pengembangan Dokumen Teknis:** Menyusun rancangan kebutuhan sistem dan dokumentasi alur program.
 - **Quality Assurance & Testing:** Melakukan skenario pengujian fungsionalitas fitur utama (pembayaran, reservasi room, dan manajemen Filament) untuk memastikan sistem bebas dari bug sebelum dipresentasikan.
 - **Kolaborasi Pengembangan:** Ikut serta dalam proses diskusi arsitektur database (`db_room_playstation`) dan penyusunan materi presentasi.
