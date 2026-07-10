@@ -1,0 +1,223 @@
+/* Custom CSS untuk Filament Panel PSRoom Enterprise (Sama Persis dengan Halaman Utama) */
+
+/* Background global untuk Admin Panel, Login, dan Layout */
+html, body.fi-body, .fi-simple-layout, .fi-layout, .fi-layout-content-ctn {
+    background-color: #020617 !important;
+    background-image: radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.05) 0px, transparent 50%),
+                      radial-gradient(at 100% 100%, rgba(37, 99, 235, 0.02) 0px, transparent 50%) !important;
+    color: #f1f5f9 !important;
+}
+
+/* Override total background putih di Filament */
+.fi-sidebar,
+.fi-sidebar-nav,
+.fi-ta-ctn,
+.fi-section,
+.fi-modal-window,
+.fi-modal-content,
+.fi-dropdown-panel,
+.fi-wi-widget,
+.fi-fo-builder,
+.fi-fo-repeater-item,
+.bg-white,
+.bg-gray-50,
+.bg-slate-50,
+.bg-gray-100,
+.bg-slate-100,
+.dark\:bg-gray-900,
+.dark\:bg-slate-900,
+div[class*="fi-wi-stats-overview-stat-card"] {
+    background-color: #090d16 !important;
+    border: 1px solid #0f172a !important;
+    color: #f1f5f9 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Sidebar Header & Brand */
+.fi-sidebar-header,
+div[class*="fi-sidebar-header"],
+div[class*="fi-sidebar-header-wrp"],
+.fi-logo,
+.fi-logo a {
+    background-color: #090d16 !important;
+    color: #ffffff !important;
+    border-right-color: #0f172a !important;
+}
+
+/* Header Utama / Topbar */
+header.fi-header, div[class*="fi-topbar"], .fi-topbar {
+    background-color: rgba(2, 6, 23, 0.8) !important;
+    backdrop-filter: blur(12px) !important;
+    border-bottom: 1px solid #0f172a !important;
+}
+
+/* Halaman Login Admin (Main Card) */
+.fi-simple-layout main, .fi-simple-page, .fi-simple-card {
+    background-color: #090d16 !important;
+    border: 1px solid #0f172a !important;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.08) !important;
+    border-radius: 8px !important;
+}
+
+/* Kustomisasi input fields agar gelap */
+input, 
+select, 
+textarea, 
+.fi-input-wrp, 
+.fi-select-input, 
+.fi-ac-btn,
+.fi-ta-search-input,
+.fi-ta-search-input-wrp,
+div[class*="fi-input-wrp"],
+div[class*="fi-ta-search-input-wrp"] {
+    background-color: #0d1527 !important;
+    border: 1px solid #0f172a !important;
+    color: #ffffff !important;
+}
+
+/* Efek hover pada field input */
+.fi-input-wrp:focus-within, div[class*="fi-input-wrp"]:focus-within {
+    border-color: #3b82f6 !important;
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.2) !important;
+}
+
+/* Sidebar Item Active */
+.fi-sidebar-item-active a, .fi-sidebar-item-active {
+    background-color: rgba(37, 99, 235, 0.1) !important;
+    border-left: 3px solid #3b82f6 !important;
+    color: #3b82f6 !important;
+}
+
+/* Sidebar Item Hover & Global Hover states */
+.fi-sidebar-item a:hover, 
+.fi-sidebar-item button:hover, 
+.fi-sidebar-item-button:hover,
+aside.fi-sidebar a:hover,
+aside.fi-sidebar button:hover,
+.fi-ta-row:hover,
+.fi-ta-row:hover td,
+.fi-dropdown-list-item:hover,
+.hover\:bg-gray-50:hover,
+.hover\:bg-gray-100:hover,
+.hover\:bg-slate-50:hover,
+.hover\:bg-slate-100:hover,
+.hover\:bg-slate-900\/20:hover {
+    background-color: rgba(37, 99, 235, 0.08) !important;
+    color: #3b82f6 !important;
+}
+
+/* Kustomisasi Tabel Filament (Header Gelap & Teks Terang) */
+thead, 
+thead tr, 
+.fi-ta-header-row, 
+.fi-ta-header-cell,
+div[class*="fi-ta-header"],
+tr[class*="fi-ta-header"] {
+    background-color: #0d1527 !important;
+    background-image: none !important;
+    border-bottom: 1px solid #0f172a !important;
+}
+
+.fi-ta-header-cell-label,
+.fi-ta-header-cell button,
+.fi-ta-header-cell span,
+thead th,
+thead th span,
+thead th button {
+    color: #ffffff !important;
+}
+
+.fi-ta-row, 
+tr.fi-ta-row,
+.fi-ta-record {
+    background-color: #090d16 !important;
+}
+
+/* Paksa teks di dalam cell tabel menjadi terang (kecuali badge) */
+.fi-ta-cell,
+.fi-ta-cell td,
+.fi-ta-cell span:not([class*="badge"]):not([class*="fi-badge"]),
+.fi-ta-cell div:not([class*="badge"]):not([class*="fi-badge"]),
+.fi-ta-text,
+.fi-ta-text-item,
+.fi-ta-text-item-label,
+.fi-ta-record-action,
+td span:not([class*="badge"]):not([class*="fi-badge"]),
+td div:not([class*="badge"]):not([class*="fi-badge"]),
+td a,
+td button {
+    color: #e2e8f0 !important;
+}
+
+/* Hover row tabel (kecuali badge) */
+.fi-ta-row:hover,
+.fi-ta-row:hover td,
+.fi-ta-row:hover span:not([class*="badge"]):not([class*="fi-badge"]),
+.fi-ta-row:hover div:not([class*="badge"]):not([class*="fi-badge"]) {
+    background-color: rgba(37, 99, 235, 0.12) !important;
+    color: #3b82f6 !important;
+}
+
+/* Teks dan Judul */
+h1, h2, h3, h4, h5, h6, 
+.fi-header-title, 
+.fi-ta-header-title,
+.fi-section-header-title,
+.fi-wi-stats-overview-stat-value,
+.fi-wi-stats-overview-stat-label,
+.text-gray-950,
+.text-gray-900,
+span.text-gray-950,
+span.text-gray-900,
+span.text-slate-900,
+.text-slate-950,
+.text-slate-900,
+.fi-ta-text-element {
+    color: #ffffff !important;
+}
+
+/* Teks deskripsi / sekunder */
+.text-gray-500, .text-slate-500, .text-gray-400, .text-gray-700, .text-slate-700 {
+    color: #94a3b8 !important;
+}
+
+/* Garis pembatas border */
+.border-gray-100, .border-gray-200, .border-gray-300, .border-slate-100, .border-slate-200, .border-slate-800, .border-slate-900 {
+    border-color: #0f172a !important;
+}
+
+
+/* Teks placeholder */
+::placeholder {
+    color: #475569 !important;
+}
+
+/* Breadcrumbs */
+.fi-breadcrumbs-item-active, .fi-breadcrumbs-item {
+    color: #94a3b8 !important;
+}
+
+/* Tombol aksi utama */
+.fi-btn-color-primary, button[class*="fi-btn-color-primary"], a[class*="fi-btn-color-primary"] {
+    background-color: #2563eb !important;
+    color: #ffffff !important;
+    border-color: transparent !important;
+    box-shadow: 0 0 12px rgba(37, 99, 235, 0.25) !important;
+}
+
+.fi-btn-color-primary:hover, button[class*="fi-btn-color-primary"]:hover {
+    background-color: #3b82f6 !important;
+}
+
+/* Tombol link / flat button */
+.fi-btn-color-gray, button[class*="fi-btn-color-gray"] {
+    background-color: #0d1527 !important;
+    border: 1px solid #0f172a !important;
+    color: #f1f5f9 !important;
+}
+
+.fi-btn-color-gray:hover, button[class*="fi-btn-color-gray"]:hover {
+    border-color: #1e293b !important;
+    background-color: #1e293b !important;
+}
+

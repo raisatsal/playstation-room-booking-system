@@ -1,0 +1,322 @@
+/* ==========================================================================
+   PSRoom Enterprise — Clean, Safe Premium Dark Theme Override
+   ========================================================================== */
+
+/* 1. Global Page Backgrounds */
+html {
+    background-color: #03060F !important;
+}
+
+body.fi-body {
+    background-color: #060C1A !important;
+    background-image:
+        radial-gradient(ellipse 70% 40% at 50% -10%, rgba(0,87,184,0.12) 0%, transparent 60%),
+        radial-gradient(ellipse 40% 60% at 100% 50%, rgba(108,43,217,0.07) 0%, transparent 50%) !important;
+    color: #E8F0FF !important;
+}
+
+/* 2. Simple Layout (Login/Registration Card Page) Wrapper */
+.fi-simple-layout {
+    background-color: #060C1A !important;
+}
+
+.fi-simple-main {
+    background-color: #0A1225 !important;
+    border: 1px solid rgba(0,180,240,0.25) !important;
+    border-radius: 1.25rem !important;
+    box-shadow: 0 0 40px rgba(0,87,184,0.2), 0 8px 32px rgba(0,0,0,0.5) !important;
+}
+
+/* Ensure child layouts of simple main do not repeat card backgrounds */
+.fi-simple-main .fi-simple-page,
+.fi-simple-main .fi-simple-page-content {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* 3. Sidebar */
+.fi-sidebar {
+    background-color: #060C1A !important;
+    border-right: 1px solid rgba(26,42,74,0.8) !important;
+}
+
+.fi-sidebar-header,
+.fi-brand {
+    background-color: #060C1A !important;
+    border-bottom: 1px solid rgba(26,42,74,0.8) !important;
+}
+
+/* Sidebar Menu Items */
+.fi-sidebar-item-btn {
+    color: #8BA3CC !important;
+    border-radius: 0.6rem !important;
+    transition: all 0.2s ease !important;
+}
+
+.fi-sidebar-item-btn:hover {
+    background-color: rgba(0,87,184,0.12) !important;
+    color: #E8F0FF !important;
+}
+
+.fi-sidebar-item-active > .fi-sidebar-item-btn,
+.fi-active > .fi-sidebar-item-btn {
+    background-color: rgba(0,87,184,0.18) !important;
+    color: #00B4F0 !important;
+}
+
+.fi-sidebar-group-label {
+    color: #4A6080 !important;
+    font-size: 0.65rem !important;
+    letter-spacing: 0.15em !important;
+    text-transform: uppercase !important;
+}
+
+/* 4. Top Navbar */
+.fi-topbar {
+    background: rgba(3,6,15,0.92) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(26,42,74,0.8) !important;
+}
+
+.fi-topbar-breadcrumbs a,
+.fi-breadcrumbs-item a,
+.fi-breadcrumbs-item-label {
+    color: #8BA3CC !important;
+}
+
+.fi-breadcrumbs-item-label a:hover {
+    color: #00B4F0 !important;
+}
+
+/* 5. Components Background Overrides (Targeting Light Mode Utility classes safely) */
+.bg-white,
+.fi-main .fi-card,
+.fi-main .fi-section,
+.fi-wi-stats-overview-stat,
+.fi-ta-content,
+.fi-ta-header,
+.fi-ta-footer,
+.fi-pagination {
+    background-color: #0A1225 !important;
+}
+
+.bg-gray-50,
+.bg-slate-50 {
+    background-color: #060C1A !important;
+}
+
+.bg-gray-100,
+.bg-slate-100 {
+    background-color: #0F1A35 !important;
+}
+
+/* 6. Border Overrides */
+.border-gray-100,
+.border-gray-200,
+.border-gray-300,
+.border-slate-100,
+.border-slate-200,
+.border-slate-300,
+hr,
+.fi-section-separator {
+    border-color: rgba(26,42,74,0.8) !important;
+}
+
+/* 7. Text Colors (Fixes Light-Mode Contrast) */
+.text-gray-950,
+.text-gray-900,
+.text-gray-800,
+.text-slate-950,
+.text-slate-900,
+.text-slate-800,
+.fi-header-heading,
+.fi-section-header-heading,
+.fi-card-header-heading,
+.fi-simple-header-heading,
+.fi-ta-cell,
+.fi-ta-table tbody td {
+    color: #E8F0FF !important;
+}
+
+.text-gray-700,
+.text-gray-600,
+.text-gray-500,
+.text-slate-700,
+.text-slate-600,
+.text-slate-500,
+.fi-fo-field-wrp-label,
+label {
+    color: #8BA3CC !important;
+}
+
+.text-gray-400,
+.text-slate-400,
+::placeholder {
+    color: #4A6080 !important;
+}
+
+/* 8. Forms & Inputs */
+.fi-input-wrp,
+input,
+select,
+textarea {
+    background-color: rgba(6,12,26,0.95) !important;
+    border-color: rgba(26,42,74,0.9) !important;
+    color: #E8F0FF !important;
+}
+
+.fi-input-wrp:focus-within {
+    border-color: rgba(0,180,240,0.5) !important;
+    box-shadow: 0 0 0 3px rgba(0,180,240,0.1) !important;
+}
+
+.fi-fo-field-wrp-helper-text {
+    color: #4A6080 !important;
+}
+
+.fi-fo-field-wrp-validation-error {
+    color: #F87171 !important;
+}
+
+/* File Upload */
+.fi-fo-file-upload,
+[x-data*="file"] .fi-fo-file-upload-ctn {
+    background: #0F1A35 !important;
+    border: 2px dashed rgba(26,42,74,0.9) !important;
+    color: #8BA3CC !important;
+}
+
+/* Select Dropdown options */
+[x-data*="select"] [role="listbox"],
+.fi-fo-select [role="listbox"] {
+    background: #0F1A35 !important;
+    border: 1px solid rgba(26,42,74,0.9) !important;
+}
+
+[role="option"] {
+    color: #E8F0FF !important;
+}
+
+[role="option"]:hover,
+[role="option"][aria-selected="true"] {
+    background: rgba(0,87,184,0.15) !important;
+    color: #00B4F0 !important;
+}
+
+/* 9. Buttons Styling */
+.fi-btn {
+    border-radius: 0.6rem !important;
+    font-weight: 700 !important;
+    transition: all 0.2s ease !important;
+}
+
+/* Primary Button */
+.fi-btn-color-primary {
+    background: linear-gradient(135deg, #0057B8, #00B4F0) !important;
+    color: #fff !important;
+    border: none !important;
+    box-shadow: 0 0 16px rgba(0,180,240,0.3) !important;
+}
+
+.fi-btn-color-primary:hover {
+    box-shadow: 0 0 24px rgba(0,180,240,0.5) !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Outlined/Gray Button */
+.fi-btn-color-gray {
+    background: rgba(15,26,53,0.8) !important;
+    border: 1px solid rgba(26,42,74,0.9) !important;
+    color: #8BA3CC !important;
+}
+
+.fi-btn-color-gray:hover {
+    background: #0F1A35 !important;
+    border-color: rgba(0,180,240,0.3) !important;
+    color: #E8F0FF !important;
+}
+
+/* Danger Button */
+.fi-btn-color-danger {
+    background: rgba(239,68,68,0.12) !important;
+    border: 1px solid rgba(239,68,68,0.3) !important;
+    color: #F87171 !important;
+}
+
+.fi-btn-color-danger:hover {
+    background: rgba(239,68,68,0.22) !important;
+}
+
+/* 10. Modals & Dialogs */
+.fi-modal-window {
+    background: #0A1225 !important;
+    border: 1px solid rgba(26,42,74,0.8) !important;
+    border-radius: 1.25rem !important;
+}
+
+.fi-modal-header {
+    border-bottom: 1px solid rgba(26,42,74,0.6) !important;
+}
+
+.fi-modal-footer {
+    border-top: 1px solid rgba(26,42,74,0.6) !important;
+    background: #0F1A35 !important;
+}
+
+.fi-modal-close-overlay {
+    background: rgba(0,0,0,0.75) !important;
+    backdrop-filter: blur(4px) !important;
+}
+
+/* 11. Dropdown Menus */
+.fi-dropdown-panel {
+    background: #0F1A35 !important;
+    border: 1px solid rgba(26,42,74,0.8) !important;
+    border-radius: 0.875rem !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6) !important;
+}
+
+.fi-dropdown-list-item-button {
+    color: #8BA3CC !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.15s ease !important;
+}
+
+.fi-dropdown-list-item-button:hover {
+    background: rgba(0,87,184,0.12) !important;
+    color: #E8F0FF !important;
+}
+
+/* 12. Tables */
+.fi-ta-header-cell {
+    background: #0F1A35 !important;
+    color: #8BA3CC !important;
+    border-bottom: 1px solid rgba(26,42,74,0.8) !important;
+}
+
+.fi-ta-row {
+    background: transparent !important;
+    border-bottom: 1px solid rgba(26,42,74,0.3) !important;
+    transition: background 0.15s ease !important;
+}
+
+.fi-ta-row:hover {
+    background: rgba(0,87,184,0.06) !important;
+}
+
+/* Custom Webkit Scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #03060F;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #0057B8, #00B4F0);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00B4F0;
+}
